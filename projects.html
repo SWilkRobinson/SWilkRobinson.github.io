@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="./styles.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephanie's Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
 </head>
-<body>
-
+  <body>
+        
     <div class="topnav" id="myTopnav">
-        <a href="https://swilkrobinson.github.io/" class="active">Home</a>
-        <div class="dropdown">
-          <button class="dropbtn">Projects 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="https://github.com/SWilkRobinson/Eyes-Exercise">Eyes Exercise</a>
-            <a href="https://github.com/SWilkRobinson/PacMen-Exercise">PacMen Exercise</a>
-            <a href="https://github.com/SWilkRobinson/Real-Time-Bus-Tracker">Real Time Bus Tracker</a>
-          </div>
-        </div> 
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-      </div>
+      <a href="#home" class="active">Home</a>
+    <div class="dropdown" link href="https://swilkrobinson.github.io/projects.html">
+      <button class="dropbtn">Projects 
+        <i class="fa fa-caret-down"></i>
+      </button>
+    <div class="dropdown-content">
+      <a href="https://github.com/SWilkRobinson/Eyes-Exercise">Eyes Exercise</a>
+      <a href="https://github.com/SWilkRobinson/PacMen-Exercise">PacMen Exercise</a>
+      <a href="https://github.com/SWilkRobinson/Real-Time-Bus-Tracker">Real Time Bus Tracker</a>
+    </div>
+    </div> 
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+      
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+     
+    <div class="sidenav">
+      <a href="#bio">Bio</a>
+      <a href="#about">About</a>
+      <a href="https://swilkrobinson.github.io/projects.html">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-<main>
-    <div></div>
-    <div></div>
-    <div></div>
+<main class="content-main">
+  <div class="image"></div>
+  <div class="bio">
+      <p><H1>Bio</H1>
+      <H2>Aspiring Web Developer</H2>
+      I have spent 10+ years in Manufacturing. I have been Inventory, Production, Quality and a Temp/Sub Supervisor. All these years have given me many experiences with people. I hope with this course, Professional Certificate in Coding: Women's Cohort, I can get to become a full-stack developer. Or at least know what part I would like to focus in and work towards for a carreer in Web Development.</p>
+  </div>
+  <div class="about"><h1>About</h1>
+      Hello and welcome to my GitHub webpage! This portfolio project is meant to help us develop and deliver content as we learn! I plan on updating this as we go along so as to attempt to showcase what I have learned.
+    Viewing this I hope you see how much I want to show.</div>
+  <div class="contact">
+      <a class="LinkedIn" href="https://www.linkedin.com/in/stephaniewilk67/">LinkedIn</a>
+      <a class="GitHub" href="https://github.com/SWilkRobinson"><img src="./GitHub-Mark-64px.png" alt="GitHub"></a>
+      <a class="Email" href="SWilkRobinson@outlook.com">Email</a>
+  </div>
 </main>
 
 </body>
